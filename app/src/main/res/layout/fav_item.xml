@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="137dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtTilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:text="title"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBrand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="brand"
+        app:layout_constraintStart_toStartOf="@+id/txtTilte"
+        app:layout_constraintTop_toBottomOf="@+id/txtTilte" />
+
+    <TextView
+        android:id="@+id/txtPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="price"
+        app:layout_constraintStart_toStartOf="@+id/txtBrand2"
+        app:layout_constraintTop_toBottomOf="@+id/txtBrand2" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="6dp"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/editPrice2" />
+
+    <TextView
+        android:id="@+id/editTitle2"
+        android:layout_width="147dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="13dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTilte"
+        app:layout_constraintTop_toTopOf="@+id/txtTilte" />
+
+    <TextView
+        android:id="@+id/editBrand2"
+        android:layout_width="147dp"
+        android:layout_height="23dp"
+        app:layout_constraintStart_toStartOf="@+id/editTitle2"
+        app:layout_constraintTop_toTopOf="@+id/txtBrand2" />
+
+    <TextView
+        android:id="@+id/editPrice2"
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editBrand2"
+        app:layout_constraintTop_toTopOf="@+id/txtPrice2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
