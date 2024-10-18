@@ -27,10 +27,8 @@ class Repo(private val localSource : ProductLocalDataSource , private val remote
         }
     }
 
-    suspend fun getProducts() {
-        remoteSource.getProducts().collect { apiState ->
-            _productsState.value = apiState
-        }
+    fun getProducts(): Flow<APIState> {
+        return remoteSource.getProducts()
     }
 
     suspend fun insertProduct(product: Product) {

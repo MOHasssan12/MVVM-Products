@@ -7,4 +7,3 @@ sealed class APIState {
     class Failure(val msg: Throwable) : APIState()
     object Loading : APIState()
 }
-

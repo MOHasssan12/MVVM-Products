@@ -55,6 +55,7 @@ class AllProducts : AppCompatActivity(), OnProductFavClickListener {
             viewModel.productsState.collect { state ->
                 when (state) {
                     is APIState.Loading -> {
+                        Toast.makeText(this@AllProducts, "Loading...", Toast.LENGTH_SHORT).show()
                     }
                     is APIState.Success -> {
                         mAdapter.submitList(state.data)
